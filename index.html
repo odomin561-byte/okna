@@ -342,38 +342,39 @@
         </div>
       </div>
 
-      <form class="form" id="leadForm" novalidate>
-        <label>
-          Ваше имя
-          <input type="text" name="name" placeholder="Иван" required />
-        </label>
-        <label>
-          Телефон
-          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
-        </label>
-        <label>
-          Что вас интересует?
-          <select name="service">
-            <option>Окна ПВХ</option>
-            <option>Остекление балкона</option>
-            <option>Входная дверь</option>
-            <option>Ремонт / регулировка</option>
-            <option>Другое</option>
-          </select>
-        </label>
-        <label>
-          Комментарий (необязательно)
-          <textarea name="comment" rows="3" placeholder="Размеры, адрес, пожелания..."></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary btn-lg btn-block">
-          Отправить заявку
-        </button>
-        <p class="form-note">
-          Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.
-        </p>
-      </form>
-      <!-- Скрытое поле для защиты от ботов (Honeypot) -->
-<input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+<form class="form" id="leadForm" novalidate>
+  <!-- Скрытое поле для защиты от ботов (Honeypot) — СТРОГО ВНУТРИ ФОРМЫ -->
+  <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+
+  <label>
+    Ваше имя
+    <input type="text" name="name" placeholder="Иван" required />
+  </label>
+  <label>
+    Телефон
+    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+  </label>
+  <label>
+    Что вас интересует?
+    <select name="service">
+      <option>Окна ПВХ</option>
+      <option>Остекление балкона</option>
+      <option>Входная дверь</option>
+      <option>Ремонт / регулировка</option>
+      <option>Другое</option>
+    </select>
+  </label>
+  <label>
+    Комментарий (необязательно)
+    <textarea name="comment" rows="3" placeholder="Размеры, адрес, пожелания..."></textarea>
+  </label>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">
+    Отправить заявку
+  </button>
+  <p class="form-note">
+    Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.
+  </p>
+</form>
     </div>
   </section>
 

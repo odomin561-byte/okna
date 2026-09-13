@@ -69,7 +69,7 @@ if (form) {
     submitBtn.disabled = true;
 
     // ⚠️ ВСТАВЬТЕ СЮДА ВАШ API-КЛЮЧ ИЗ ЛИЧНОГО КАБИНЕТА
-    const API_KEY = 'r9hZPraD3cy1o3AX'; 
+    const API_KEY = "Authorization": "Bearer r9hZPraD3cy1o3AX"; 
 
     try {
       const response = await fetch('https://api.formtomail.ru/send', {
